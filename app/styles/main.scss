@@ -31,10 +31,7 @@ body {
 .header {
   border-radius: 30px;
   background-image: url(../images/image.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
+  @include back-image;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -110,6 +107,7 @@ body {
           box-shadow: $bshdw;
           margin-bottom: 10px;
           background-color: white;
+          cursor: pointer;
 
           &:nth-child(2) {
             margin: 0 10px;
@@ -200,6 +198,20 @@ body {
           }
         }
       }
+    }
+  }
+  .offers{
+    overflow-y:scroll;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    .offer-box{
+      height: 20vh;
+      margin: 5px 0;
+      background-image: url(../images/vodafone-red.jpg);
+      flex-shrink: 0;
+      @include back-image;
+      border-radius: 20px;
     }
   }
 }
