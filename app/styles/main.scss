@@ -2,6 +2,7 @@
 @import"SharedFunct";
 @import"header";
 @import"options";
+@import"search";
 
 .header {
   @include back-image;
@@ -41,8 +42,8 @@
 .options {
   padding: 0 15px;
 
-  .phonesdevices {
-    @include phonesdevices;
+  .left-section {
+    @include left-section;
     h3 {
       font-weight: 500;
     }
@@ -55,7 +56,7 @@
         width: 90px;
 
         .typecont {
-          @include phonesdevices-choose-box-typecont;
+          @include left-section-choose-box-typecont;
 
           img {
             width: 50px;
@@ -73,11 +74,11 @@
     margin-bottom: 15px;
 
     .deal {
-      @include options-deals-deal;
+      @include options-left-section-deals-deal;
 
       .d {
         @include icon-size(40px);
-        @include options-deals-deal;
+        @include options-left-section-deals-deal;
       }
     }
   }
@@ -88,11 +89,11 @@
   }
 
 
-  .best-sellings {
-    @include options-best-selling;
+  .middel-section {
+    @include options-middel-section;
 
     .carousel {
-      @include options-best-selling-carousel;
+      @include options-middel-section-carousel;
 
       .line {
         background-color: #EAECEE !important;
@@ -100,10 +101,10 @@
       }
 
       .div-tit {
-        @include options-best-selling-carousel-div-tit;
+        @include options-middel-section-carousel-div-tit;
 
         button {
-          @include options-best-selling-carousel-div-tit-button;
+          @include options-middel-section-carousel-div-tit-button;
         }
       }
 
@@ -112,10 +113,10 @@
           @include adj-card;
 
           .installment {
-            @include options-best-selling-carousel-carousel-inner-installment;
+            @include options-middel-section-carousel-carousel-inner-installment;
 
             p {
-              @include options-best-selling-carousel-carousel-inner-installment-p;
+              @include options-middel-section-carousel-carousel-inner-installment-p;
             }
           }
 
@@ -128,11 +129,11 @@
     }
   }
 
-  .offers {
-    @include options-offers;
+  .right-section {
+    @include options-right-section;
 
     .offer-box {
-      @include options-offers-offer-box;
+      @include options-right-section-offer-box;
       @include back-image;
     }
   }
@@ -140,7 +141,7 @@
 
 @media(min-width:576px) {
   .options {
-    .phonesdevices {
+    .left-section {
       .choose {
         .box {
           .typecont {
@@ -156,7 +157,7 @@
 
 @media(min-width:992px) {
   .options {
-    .offers {
+    .right-section {
       overflow-y: scroll;
     }
   }

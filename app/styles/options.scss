@@ -1,10 +1,8 @@
-@mixin phonesdevices() {
-  display: flex;
-  flex-direction: column;
+@mixin left-section() {
   padding: 0 10px;
 }
 
-@mixin phonesdevices-choose-box-typecont {
+@mixin left-section-choose-box-typecont {
   width: 80px;
   height: 80px;
   display: flex;
@@ -16,20 +14,20 @@
   background-color: white;
 }
 
-@mixin options-deals-deal {
+@mixin options-left-section-deals-deal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin options-best-selling {
+@mixin options-middel-section {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
 }
 
-@mixin options-best-selling-carousel {
+@mixin options-middel-section-carousel {
   background-color: white;
   border-radius: 20px;
   border: 1px solid transparent;
@@ -38,7 +36,7 @@
   box-shadow: $bShadow;
 }
 
-@mixin options-best-selling-carousel-div-tit {
+@mixin options-middel-section-carousel-div-tit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,7 +44,7 @@
   font-weight: 600;
 }
 
-@mixin options-best-selling-carousel-div-tit-button {
+@mixin options-middel-section-carousel-div-tit-button {
   color: white;
   border: 0.5px solid transparent;
   background-color: $vRed;
@@ -57,25 +55,25 @@
   box-shadow: 0px 1px 0.5px 0.5px #AEB6BF;
 }
 
-@mixin options-best-selling-carousel-carousel-inner-installment {
+@mixin options-middel-section-carousel-carousel-inner-installment {
   border-radius: 5px;
   background-color: #ABB2B9;
   text-align: center;
 }
 
-@mixin options-best-selling-carousel-carousel-inner-installment-p {
+@mixin options-middel-section-carousel-carousel-inner-installment-p {
   color: black !important;
   margin: auto;
   display: inline;
 }
 
-@mixin options-offers {
+@mixin options-right-section {
   height: 626px;
   display: flex;
   flex-direction: column;
 }
 
-@mixin options-offers-offer-box {
+@mixin options-right-section-offer-box {
   height: 150px;
   margin: 5px 0;
   flex-shrink: 0;
