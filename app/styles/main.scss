@@ -1,94 +1,48 @@
 @import"variables";
 @import"SharedFunct";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  color: $vRed;
-  margin: auto !important;
-}
-
-/* Space out content a bit */
-body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #EAECEE;
-
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
+@import"header";
+@import"options";
 
 .header {
-  border-radius: 30px;
-  background-image: url(../images/image.jpg);
   @include back-image;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  color: white !important;
-  box-shadow: $bshdw;
-  margin-right: -15px;
-  margin-bottom: 20px;
-
+  @include head;
   h2 {
     font-weight: 700;
   }
 
+  p {
+    margin-bottom: 0px;
+  }
+
   .inti {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    @include head-inti;
 
-    .logo-box {
-      display: flex;
+    img {
       width: 40px;
-      height: 40px;
       border-radius: 50%;
-      background-color: white;
-      padding: 2px;
-
-      img {
-        width: 100%;
-        border-radius: 50%;
-      }
     }
 
     .icons {
-      flex-direction: row;
-      align-content: center;
-      color: white;
+      @include head-inti-icons;
       @include icon-color(white);
       @include icon-size(22px);
+      a{
+        text-decoration: none;
+      }
 
       img {
         width: 40px;
         border-radius: 50%;
-        margin-left: 20px;
       }
     }
   }
 }
 
 .options {
-  height: calc(100vh - 147px);
   padding: 0 15px;
 
   .phonesdevices {
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-
+    @include phonesdevices;
     h3 {
       font-weight: 500;
     }
@@ -98,38 +52,33 @@ body {
       flex-direction: row;
 
       .box {
-        flex-basis: 30%;
+        width: 90px;
 
         .typecont {
-          border: 0.5px solid transparent;
-          border-radius: 20px;
-          padding: 15px;
-          box-shadow: $bshdw;
-          margin-bottom: 10px;
-          background-color: white;
-          cursor: pointer;
+          @include phonesdevices-choose-box-typecont;
 
-          &:nth-child(2) {
-            margin: 0 10px;
+          img {
+            width: 50px;
+            margin: auto;
           }
 
+          cursor: pointer;
           @include icon-size(50px);
         }
       }
     }
   }
 
-  .deal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .deals {
+    margin-bottom: 15px;
 
-    .d {
-      @include icon-size(40px);
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    .deal {
+      @include options-deals-deal;
+
+      .d {
+        @include icon-size(40px);
+        @include options-deals-deal;
+      }
     }
   }
 
@@ -140,16 +89,10 @@ body {
 
 
   .best-sellings {
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include options-best-selling;
 
     .carousel {
-      background-color: white;
-      border-radius: 20px;
-      border: 1px solid transparent;
-      padding: 15px;
+      @include options-best-selling-carousel;
 
       .line {
         background-color: #EAECEE !important;
@@ -157,21 +100,10 @@ body {
       }
 
       .div-tit {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 7px;
-        font-weight: 600;
+        @include options-best-selling-carousel-div-tit;
 
         button {
-          color: white;
-          background-color: $vRed;
-          border: 0.5px solid transparent;
-          border-radius: 7px;
-          font-size: 14px;
-          padding: 1px 10px;
-          outline: none;
-          box-shadow: 0px 1px 0.5px 0.5px #AEB6BF;
+          @include options-best-selling-carousel-div-tit-button;
         }
       }
 
@@ -180,15 +112,10 @@ body {
           @include adj-card;
 
           .installment {
-            border-radius: 5px;
-            background-color: #ABB2B9;
-            padding: 5px;
-            text-align: center;
+            @include options-best-selling-carousel-carousel-inner-installment;
 
             p {
-              color: black !important;
-              margin: auto;
-              display: inline;
+              @include options-best-selling-carousel-carousel-inner-installment-p;
             }
           }
 
@@ -200,18 +127,37 @@ body {
       }
     }
   }
-  .offers{
-    overflow-y:scroll;
-    display: flex;
-    flex-direction: column;
-    max-height: 100%;
-    .offer-box{
-      height: 20vh;
-      margin: 5px 0;
-      background-image: url(../images/vodafone-red.jpg);
-      flex-shrink: 0;
+
+  .offers {
+    @include options-offers;
+
+    .offer-box {
+      @include options-offers-offer-box;
       @include back-image;
-      border-radius: 20px;
+    }
+  }
+}
+
+@media(min-width:576px) {
+  .options {
+    .phonesdevices {
+      .choose {
+        .box {
+          .typecont {
+            width: 90px;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media(min-width:992px) {
+  .options {
+    .offers {
+      overflow-y: scroll;
     }
   }
 }
