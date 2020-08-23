@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 18/08/2020 16:50
+    Creation date: 23/08/2020 00:48
     */
 
     @font-face {
@@ -37,24 +37,18 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-search:before { content: "\f100"; }
-.flaticon-shopping-cart:before { content: "\f101"; }
-.flaticon-mobile-phone:before { content: "\f102"; }
-.flaticon-tablet:before { content: "\f103"; }
-.flaticon-smart-belt:before { content: "\f104"; }
-.flaticon-wifi-signal:before { content: "\f105"; }
-.flaticon-cloud-storage:before { content: "\f106"; }
-.flaticon-4g:before { content: "\f107"; }
-.flaticon-handshake:before { content: "\f108"; }
-.flaticon-chevron:before { content: "\f109"; }
+    .flaticon-up-chevron:before { content: "\f100"; }
+.flaticon-down-chevron:before { content: "\f101"; }
+.flaticon-chevron:before { content: "\f102"; }
+.flaticon-left-arrow:before { content: "\f103"; }
+.flaticon-magnifiying-glass:before { content: "\f104"; }
+.flaticon-shopping-cart:before { content: "\f105"; }
+.flaticon-delete:before { content: "\f106"; }
     
-    $font-Flaticon-search: "\f100";
-    $font-Flaticon-shopping-cart: "\f101";
-    $font-Flaticon-mobile-phone: "\f102";
-    $font-Flaticon-tablet: "\f103";
-    $font-Flaticon-smart-belt: "\f104";
-    $font-Flaticon-wifi-signal: "\f105";
-    $font-Flaticon-cloud-storage: "\f106";
-    $font-Flaticon-4g: "\f107";
-    $font-Flaticon-handshake: "\f108";
-    $font-Flaticon-chevron: "\f109";
+    $font-Flaticon-up-chevron: "\f100";
+    $font-Flaticon-down-chevron: "\f101";
+    $font-Flaticon-chevron: "\f102";
+    $font-Flaticon-left-arrow: "\f103";
+    $font-Flaticon-magnifiying-glass: "\f104";
+    $font-Flaticon-shopping-cart: "\f105";
+    $font-Flaticon-delete: "\f106";
