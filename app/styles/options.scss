@@ -25,6 +25,7 @@
   padding: 0 15px;
   display: flex;
   flex-direction: column;
+  max-height: 100%;
 }
 
 @mixin options-middel-section-carousel {
@@ -34,6 +35,14 @@
   padding: 15px;
   margin-bottom: 15px;
   box-shadow: $bShadow;
+}
+
+@mixin options-middel-section-carousel-carousel-inner-card-body-card{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+  flex-basis: calc(100% - 103px);
 }
 
 @mixin options-middel-section-carousel-div-tit {
@@ -65,12 +74,13 @@
   color: black !important;
   margin: auto;
   display: inline;
+  padding: 0px 5px;
 }
 
 @mixin options-right-section {
-  height: 626px;
   display: flex;
   flex-direction: column;
+  max-height: 100%;
 }
 
 @mixin options-right-section-offer-box {

@@ -19,7 +19,7 @@
     @include head-inti;
 
     img {
-      width: 40px;
+      width: 50px;
       border-radius: 50%;
     }
 
@@ -41,6 +41,7 @@
 
 .options {
   padding: 0 15px;
+  height: calc(100vh - 155px);
 
   .left-section {
     @include left-section;
@@ -111,6 +112,10 @@
       .carousel-inner {
         .card {
           @include adj-card;
+
+          .card-body{
+            @include options-middel-section-carousel-carousel-inner-card-body-card;
+          }
 
           .installment {
             @include options-middel-section-carousel-carousel-inner-installment;
