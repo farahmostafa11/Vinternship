@@ -163,9 +163,17 @@
 
 @media(min-width:992px) {
   .options {
+    .middel-section{
+      max-height: 100%;
+    }
+
+    .left-section{
+      max-height: 100%;
+    }
 
     .right-section {
       overflow-y: hidden;
+      max-height: 100%;
     }
     .right-section:hover {
       overflow-y: scroll;

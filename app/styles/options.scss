@@ -25,7 +25,6 @@
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-  max-height: 100%;
 }
 
 @mixin options-middel-section-carousel {
@@ -80,7 +79,7 @@
 @mixin options-right-section {
   display: flex;
   flex-direction: column;
-  max-height: 100%;
+  
 }
 
 @mixin options-right-section-offer-box {
