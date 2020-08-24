@@ -4,11 +4,16 @@
 
 .options {
   .left-section {
+    &:hover {
+      overflow-y: visible;
+    }
+
     .input-group {
-        #myinput{
-            box-shadow: none;
-            border: none;
-        }
+      #myinput {
+        box-shadow: none;
+        border: none;
+      }
+
       .input-group-append {
         .btn {
           background-color: $vRed;
@@ -101,7 +106,8 @@
 
 .options {
   .right-section {
-      margin-bottom: 35px;
+    margin-bottom: 35px;
+
     .helping-robot {
       display: flex;
       flex-direction: column;
@@ -136,17 +142,29 @@
   .options {
 
     .right-section.search-file {
-        max-height: 100%;
+      max-height: 100%;
+      overflow-y: hidden;
+    }
+
+    .right-section.search-file:hover {
       overflow-y: scroll;
     }
 
 
     .left-section.search-file {
-        max-height: 100%;
+      max-height: 100%;
+      overflow-y: hidden;
+    }
+
+    .left-section.search-file:hover {
       overflow-y: scroll;
     }
 
     .middel-section.search-file-best-selling-section {
+      overflow-y:hidden;
+    }
+
+    .middel-section.search-file-best-selling-section:hover {
       overflow-y: scroll;
     }
   }

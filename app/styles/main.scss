@@ -92,6 +92,7 @@
 
   .middel-section {
     @include options-middel-section;
+    
 
     .carousel {
       @include options-middel-section-carousel;
@@ -162,7 +163,11 @@
 
 @media(min-width:992px) {
   .options {
+
     .right-section {
+      overflow-y: hidden;
+    }
+    .right-section:hover {
       overflow-y: scroll;
     }
   }
