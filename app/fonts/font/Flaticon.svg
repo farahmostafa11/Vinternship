@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2020-8-23: Created with FontForge (http://fontforge.org)
+2020-8-25: Created with FontForge (http://fontforge.org)
 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20170731 at Sun Aug 23 00:48:10 2020
+Created by FontForge 20170731 at Tue Aug 25 20:09:02 2020
  By root
 
 </metadata>
@@ -22,7 +22,7 @@ Created by FontForge 20170731 at Sun Aug 23 00:48:10 2020
     bbox="-0.000549945 -64 512.002 448"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+0020-F106"
+    unicode-range="U+0020-F107"
   />
     <missing-glyph />
     <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
@@ -56,5 +56,8 @@ M209.254 -17.9766c-8.28516 0 -15 6.71484 -15 15v270.398c0 8.28516 6.71484 15 15 
     <glyph glyph-name="004-left-arrow" unicode="&#xf103;" 
 d="M165.647 191.881l222.492 -222.492c7.37305 -7.63379 7.37305 -19.7383 0 -27.373c-7.55859 -7.82715 -20.0312 -8.04395 -27.8584 -0.485352l-236.421 236.422c-7.69043 7.69336 -7.69043 20.165 0 27.8584l236.421 236.421c7.69336 7.69043 20.1641 7.69043 27.8584 0
 c7.69141 -7.69336 7.69141 -20.165 0 -27.8584z" />
+    <glyph glyph-name="009-cancel" unicode="&#xf107;" 
+d="M293.264 191.643l211.189 -211.217c10.0625 -10.0889 10.0625 -26.459 0 -36.5732c-10.0635 -10.0879 -26.4082 -10.0879 -36.4707 0l-211.345 211.37l-212.62 -211.446c-10.0625 -9.98633 -26.4072 -9.98633 -36.4707 0c-10.0625 9.96094 -10.0625 26.1279 0 36.1143
+l212.801 211.624l-212.034 212.06c-10.0625 10.0889 -10.0625 26.459 0 36.5732c10.0635 10.0879 26.4082 10.0879 36.4707 0l212.189 -212.213l210.244 209.096c10.0635 9.98633 26.4082 9.98633 36.4707 0c10.0889 -9.96094 10.0889 -26.127 0 -36.1133z" />
   </font>
 </defs></svg>

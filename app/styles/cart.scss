@@ -1,0 +1,213 @@
+@import"variables";
+@import"SharedFunct";
+@import"options";
+
+.modal-container {
+  position: fixed;
+  z-index: 999999999;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+
+  .close-modal {
+    position: absolute;
+    font-size: 26px;
+    left: 47%;
+    top: 20px;
+    height: 78px;
+    width: 78px;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 50%;
+    .flaticon-cancel::before{
+        font-size: 38px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        color: black;
+    }
+
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  .modal-body {
+    position: absolute;
+    background: #fff;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: $bShadow;
+    text-align: center;
+    .city{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        border: 0.5px solid #ccc;
+        margin: 10px 0;
+        border-radius: 8px;
+        h5{
+            margin: 0;
+        }
+        .flaticon-down-chevron::before{
+            color: black;
+        }
+        
+    }
+
+    img {
+      width: 140px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #18A232;
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 8px;
+      background-color: $vRed;
+      border: none;
+      outline: none;
+      color: white;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+.whole-container {
+  display: flex;
+  flex-direction: column;
+
+  .sel-btn {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: $vRed;
+    border: none;
+    outline: none;
+    color: white;
+  }
+
+  .shop {
+    .selected-profucts {
+      .text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          display: inline;
+        }
+      }
+
+      .card {
+        border-radius: 20px;
+        border: 1px solid transparent;
+        padding: 15px;
+
+        .card-body {
+          @include options-middel-section-carousel-carousel-inner-card-body-card;
+          height: 100%;
+          justify-content: space-around;
+        }
+
+        .installment {
+          @include options-middel-section-carousel-carousel-inner-installment;
+
+          p {
+            @include options-middel-section-carousel-carousel-inner-installment-p;
+            margin-bottom: 0;
+          }
+        }
+
+        .row {
+          .col-md-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .amount {
+              display: flex;
+              flex-direction: row;
+              text-align: center;
+              justify-content: space-around;
+              align-items: center;
+
+              .dropdown {
+                .btn-secondary {
+                  color: #000;
+                  background-color: white;
+                  box-shadow: none;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .payment {
+      .check-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border: 0.5px solid transparent;
+        box-shadow: $bShadow;
+        padding: 8px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        .dif {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 40px;
+
+            display: flex;
+            flex-direction: row;
+          }
+
+          span {
+            margin-left: 30px;
+
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .circle {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 0.5px solid #808B96;
+        }
+      }
+    }
+
+  }
+
+}
