@@ -106,14 +106,13 @@
 
 .options {
   .right-section {
-    margin: 35px 0;
-
 
     .helping-robot {
       display: flex;
       flex-direction: column;
       padding: 0 15px;
       align-items: center;
+      margin: 30px 0;
 
       img {
         width: 100px;
@@ -125,6 +124,7 @@
         border: 0.5px solid $vRed;
         color: $vRed;
         border-radius: 10px;
+        background-color: transparent;
       }
     }
   }
