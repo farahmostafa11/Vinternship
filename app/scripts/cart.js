@@ -5,8 +5,10 @@ let new_address = document.getElementsByClassName('sel-btn')[0];
 let check_out_btn = document.getElementsByClassName('sel-btn')[1];
 let check_modal = document.getElementsByClassName('modal-container')[0];
 let address_modal = document.getElementsByClassName('modal-container')[1];
-let cash = document.getElementsByClassName('circle')[0];
-let visa = document.getElementsByClassName('circle')[1];
+let cashcircle = document.getElementsByClassName('circle')[0];
+let visacircle = document.getElementsByClassName('circle')[1];
+let cash = document.getElementsByClassName('check-cont')[0];
+let visa = document.getElementsByClassName('check-cont')[1];
 
 
 
@@ -36,15 +38,15 @@ function show_right_modal(){
 cash.addEventListener('click',greentowhite);
 
 function greentowhite(){
-    cash.style.backgroundColor= '#18A232';
-    visa.style.backgroundColor= 'white';
+    cashcircle.style.backgroundColor= '#18A232';
+    visacircle.style.backgroundColor= 'white';
 }
 
 visa.addEventListener('click',whitetogreen);
 
 function whitetogreen(){
-  if(visa.style.backgroundColor === 'white'){
-    cash.style.backgroundColor= 'white';
-    visa.style.backgroundColor= '#18A232';
+  if(visacircle.style.backgroundColor === 'white'){
+    cashcircle.style.backgroundColor= 'white';
+    visacircle.style.backgroundColor= '#18A232';
   }
 }

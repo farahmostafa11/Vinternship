@@ -16,11 +16,6 @@ let faq3 = document.getElementsByClassName('search-icon3')[0];
 
 
 let text1 = document.getElementById('myinput');
-console.log(text1);
-console.log(faq1);
-console.log(faq2);
-console.log(faq3);
-
 
 faq1.addEventListener('click', arrowtoggel);
 

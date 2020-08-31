@@ -28,7 +28,7 @@
     .mini-photos {
       display: flex;
       overflow-x: hidden;
-      
+      padding: 5px;
 
       &:hover {
         overflow-x: scroll;
@@ -138,7 +138,7 @@
       background-color: #ccc;
       border-radius: 8px;
       display: flex;
-      padding: 5px;
+      padding: 10px;
 
       .intrests {
         flex-basis: 48%;
