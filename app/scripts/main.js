@@ -14,10 +14,14 @@ let faq1 = document.getElementsByClassName('search-icon1')[0];
 let faq2 = document.getElementsByClassName('search-icon2')[0];
 let faq3 = document.getElementsByClassName('search-icon3')[0];
 
+let btn1 = document.getElementsByClassName('btn-link')[0];
+let btn2 = document.getElementsByClassName('btn-link')[1];
+let btn3 = document.getElementsByClassName('btn-link')[2];
+
 
 let text1 = document.getElementById('myinput');
 
-faq1.addEventListener('click', arrowtoggel);
+btn1.addEventListener('click', arrowtoggel);
 
 function arrowtoggel() {
   faq1.classList.toggle('flaticon-up-chevron');
@@ -33,7 +37,7 @@ function arrowtoggel() {
   }
 }
 
-faq2.addEventListener('click', arrowtoggel2);
+btn2.addEventListener('click', arrowtoggel2);
 
 function arrowtoggel2() {
   faq2.classList.toggle('flaticon-down-chevron');
@@ -47,7 +51,7 @@ function arrowtoggel2() {
     faq3.classList.toggle('flaticon-up-chevron');
   }
 }
-faq3.addEventListener('click', arrowtoggel3);
+btn3.addEventListener('click', arrowtoggel3);
 
 function arrowtoggel3() {
   faq3.classList.toggle('flaticon-down-chevron');
@@ -68,14 +72,16 @@ let Results = document.getElementsByClassName('Results')[0];
 const isEmpty = str => !str.trim().length;
 
 
-text1.addEventListener('input', function () {
+text1.addEventListener('keypress', function () {
+  text1.addEventListener('input',function(){
   if (isEmpty(this.value)) {
-    console.log("NAME is invalid (Empty)")
+    noResults.classList.remove('none');
+    Results.classList.add('none');
   } else {
-    console.log(`NAME value is: ${this.value}`);
     noResults.classList.add('none');
     Results.classList.remove('none');
   }
+});
 });
 
 

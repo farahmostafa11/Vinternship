@@ -57,9 +57,14 @@
     .choose {
       display: flex;
       flex-direction: row;
+      
 
       .box {
         width: 90px;
+        margin: 0 15px;
+        &:first-child{
+          margin-left: 0;
+        }
 
         .typecont {
           @include left-section-choose-box-typecont;
