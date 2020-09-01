@@ -52,7 +52,7 @@
         flex-basis: 30%;
         height: 180px;
 
-        @media(min-width: 992px ) {
+        @media(min-width: 992px) {
           height: 100px;
         }
 
@@ -142,7 +142,7 @@
     }
 
     .delivery {
-
+        margin-bottom: 20px;
       .col-3 {
         img {
           width: 100%;
@@ -151,6 +151,7 @@
 
       .delivery-txt {
         margin: 0;
+        display: block;
       }
     }
 
