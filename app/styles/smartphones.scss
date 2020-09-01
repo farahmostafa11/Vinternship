@@ -5,6 +5,7 @@
 .options.smartphone-r {
   height: auto !important;
   justify-content: space-between;
+  padding-right: 0;
 
   .filtersanditems {
     display: flex;
@@ -49,6 +50,7 @@
 
       .column {
         flex-basis: 100%;
+        
 
         @media(min-width:992px) {
           flex-basis: 48%;
