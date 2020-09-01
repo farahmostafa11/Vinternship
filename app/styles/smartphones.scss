@@ -91,11 +91,10 @@
   }
 
   .right-section {
-      
-      img{
-          margin:10px 0
-      }
-      overflow-y: hidden;
+     overflow: hidden;
+     &:hover{
+         overflow-x: hidden;
+     }
     .carousel {
       @include options-middel-section-carousel;
 
@@ -161,6 +160,39 @@
           @include icon-size(50px);
         }
       }
+    }
+    .ana-vodafone{
+        background-color: white;
+        margin: 90px 0;
+        border-radius: 5px;
+        box-shadow: $bShadow;
+        padding: 15px;
+        .mobile-img-cont{
+            width: 30%;
+            margin-top: -70px;
+            img{
+                width: 80%;
+            }
+        }
+        .ana-vodafone-details{
+            .ana-vodafone-tit{
+                margin-bottom: 10px;
+                img{
+                    width: 45px;
+                }
+                h5{
+                    font-size: 16px;
+                    display: inline;
+                }
+            }
+            img{
+                width: 45%;
+            }
+            width: 70%;
+            p{
+                font-size: 14px;
+            }
+        }
     }
   }
 }
